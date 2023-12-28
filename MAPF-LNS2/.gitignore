@@ -1,0 +1,5 @@
+.DS_Store
+.ccls*
+result
+paths.txt
+test*
