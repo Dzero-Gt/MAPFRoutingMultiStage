@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f9358609-940e-4435-b22e-a2ce265b09b1}</ProjectGuid>
+    <RootNamespace>MapF</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\DAVEG\DZero\OneDrive\Desktop\eigen-3.4.0\eigen-3.4.0;C:\Users\DAVEG\DZero\OneDrive\Desktop\boost_1_80_0\boost_1_80_0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\DAVEG\DZero\OneDrive\Desktop\boost_1_80_0\boost_1_80_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\DAVEG\DZero\OneDrive\Desktop\boost_1_80_0\boost_1_80_0;C:\Users\DAVEG\DZero\OneDrive\Desktop\eigen-3.4.0\eigen-3.4.0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\DAVEG\DZero\OneDrive\Desktop\boost_1_80_0\boost_1_80_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\MAPF_routing\inc\PIBT;C:\MAPF_routing\inc;C:\MAPF_routing\inc\CBS;C:\Users\DAVEG\DZero\OneDrive\Desktop\boost_1_80_0\boost_1_80_0;C:\Users\DAVEG\AppData\Local\Programs\Python\Python310\include;C:\Users\DAVEG\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include\numpy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\DAVEG\AppData\Local\Programs\Python\Python310\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\DAVEG\DZero\OneDrive\Desktop\boost_1_80_0\boost_1_80_0;C:\MAPF_routing\inc;C:\MAPF_routing\inc\CBS;C:\MAPF_routing\inc\PIBT;C:\Users\DAVEG\AppData\Local\Programs\Python\Python310\include;C:\Users\DAVEG\AppData\Local\Programs\Python\Python310\Lib\site-packages\numpy\core\include\numpy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\DAVEG\DZero\OneDrive\Desktop\boost_1_80_0\boost_1_80_0\stage\lib;C:\Users\DAVEG\AppData\Local\Programs\Python\Python310\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\AnytimeBCBS.cpp" />
+    <ClCompile Include="..\..\src\AnytimeEECBS.cpp" />
+    <ClCompile Include="..\..\src\BasicLNS.cpp" />
+    <ClCompile Include="..\..\src\CBS\CBS.cpp" />
+    <ClCompile Include="..\..\src\CBS\CBSHeuristic.cpp" />
+    <ClCompile Include="..\..\src\CBS\CBSNode.cpp" />
+    <ClCompile Include="..\..\src\CBS\Conflict.cpp" />
+    <ClCompile Include="..\..\src\CBS\ConstraintPropagation.cpp" />
+    <ClCompile Include="..\..\src\CBS\CorridorReasoning.cpp" />
+    <ClCompile Include="..\..\src\CBS\ECBS.cpp" />
+    <ClCompile Include="..\..\src\CBS\GCBS.cpp" />
+    <ClCompile Include="..\..\src\CBS\IncrementalPairwiseMutexPropagation.cpp" />
+    <ClCompile Include="..\..\src\CBS\MDD.cpp" />
+    <ClCompile Include="..\..\src\CBS\MutexReasoning.cpp" />
+    <ClCompile Include="..\..\src\CBS\PBS.cpp" />
+    <ClCompile Include="..\..\src\CBS\RectangleReasoning.cpp" />
+    <ClCompile Include="..\..\src\common.cpp" />
+    <ClCompile Include="..\..\src\ConstraintTable.cpp" />
+    <ClCompile Include="..\..\src\driver.cpp" />
+    <ClCompile Include="..\..\src\InitLNS.cpp" />
+    <ClCompile Include="..\..\src\Instance.cpp" />
+    <ClCompile Include="..\..\src\LNS.cpp" />
+    <ClCompile Include="..\..\src\PathTable.cpp" />
+    <ClCompile Include="..\..\src\PIBT\graph.cpp" />
+    <ClCompile Include="..\..\src\PIBT\grid.cpp" />
+    <ClCompile Include="..\..\src\PIBT\mapf.cpp" />
+    <ClCompile Include="..\..\src\PIBT\node.cpp" />
+    <ClCompile Include="..\..\src\PIBT\pibt.cpp" />
+    <ClCompile Include="..\..\src\PIBT\pibt_agent.cpp" />
+    <ClCompile Include="..\..\src\PIBT\pps.cpp" />
+    <ClCompile Include="..\..\src\PIBT\problem.cpp" />
+    <ClCompile Include="..\..\src\PIBT\simplegrid.cpp" />
+    <ClCompile Include="..\..\src\PIBT\solver.cpp" />
+    <ClCompile Include="..\..\src\PIBT\task.cpp" />
+    <ClCompile Include="..\..\src\PIBT\winpibt.cpp" />
+    <ClCompile Include="..\..\src\ReservationTable.cpp" />
+    <ClCompile Include="..\..\src\SingleAgentSolver.cpp" />
+    <ClCompile Include="..\..\src\SIPP.cpp" />
+    <ClCompile Include="..\..\src\SpaceTimeAStar.cpp" />
+    <ClCompile Include="x64\Release\parsePreviousPaths.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\AnytimeBCBS.h" />
+    <ClInclude Include="..\..\inc\AnytimeEECBS.h" />
+    <ClInclude Include="..\..\inc\BasicLNS.h" />
+    <ClInclude Include="..\..\inc\CBS\CBS.h" />
+    <ClInclude Include="..\..\inc\CBS\CBSHeuristic.h" />
+    <ClInclude Include="..\..\inc\CBS\CBSNode.h" />
+    <ClInclude Include="..\..\inc\CBS\Conflict.h" />
+    <ClInclude Include="..\..\inc\CBS\ConstraintPropagation.h" />
+    <ClInclude Include="..\..\inc\CBS\CorridorReasoning.h" />
+    <ClInclude Include="..\..\inc\CBS\ECBS.h" />
+    <ClInclude Include="..\..\inc\CBS\ECBSNode.h" />
+    <ClInclude Include="..\..\inc\CBS\GCBS.h" />
+    <ClInclude Include="..\..\inc\CBS\GCBSNode.h" />
+    <ClInclude Include="..\..\inc\CBS\IncrementalPairwiseMutexPropagation.hpp" />
+    <ClInclude Include="..\..\inc\CBS\MDD.h" />
+    <ClInclude Include="..\..\inc\CBS\MutexReasoning.h" />
+    <ClInclude Include="..\..\inc\CBS\PBS.h" />
+    <ClInclude Include="..\..\inc\CBS\RectangleReasoning.h" />
+    <ClInclude Include="..\..\inc\common.h" />
+    <ClInclude Include="..\..\inc\ConstraintTable.h" />
+    <ClInclude Include="..\..\inc\InitLNS.h" />
+    <ClInclude Include="..\..\inc\Instance.h" />
+    <ClInclude Include="..\..\inc\LNS.h" />
+    <ClInclude Include="..\..\inc\parsePrevPaths.h" />
+    <ClInclude Include="..\..\inc\PathTable.h" />
+    <ClInclude Include="..\..\inc\PIBT\graph.h" />
+    <ClInclude Include="..\..\inc\PIBT\grid.h" />
+    <ClInclude Include="..\..\inc\PIBT\mapf.h" />
+    <ClInclude Include="..\..\inc\PIBT\node.h" />
+    <ClInclude Include="..\..\inc\PIBT\pibt.h" />
+    <ClInclude Include="..\..\inc\PIBT\pibt_agent.h" />
+    <ClInclude Include="..\..\inc\PIBT\pps.h" />
+    <ClInclude Include="..\..\inc\PIBT\problem.h" />
+    <ClInclude Include="..\..\inc\PIBT\simplegrid.h" />
+    <ClInclude Include="..\..\inc\PIBT\solver.h" />
+    <ClInclude Include="..\..\inc\PIBT\task.h" />
+    <ClInclude Include="..\..\inc\PIBT\util.h" />
+    <ClInclude Include="..\..\inc\PIBT\vec2f.h" />
+    <ClInclude Include="..\..\inc\PIBT\winpibt.h" />
+    <ClInclude Include="..\..\inc\ReservationTable.h" />
+    <ClInclude Include="..\..\inc\SingleAgentSolver.h" />
+    <ClInclude Include="..\..\inc\SIPP.h" />
+    <ClInclude Include="..\..\inc\SpaceTimeAStar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\x64\Release\parse_paths.py" />
+    <None Include="..\x64\Release\scen_dest_adjust.py" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
